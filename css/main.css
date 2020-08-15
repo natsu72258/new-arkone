@@ -352,6 +352,11 @@ div.wordbox > a{
 div.linkbox > h3{
 	font-size: 30px;
 	color: #fff;
+	padding-bottom: 10px;
+}
+
+#FB{
+     color: #fff;
 }
 
 /*------------------------------------------------------*/
