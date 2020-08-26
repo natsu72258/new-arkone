@@ -76,6 +76,11 @@ article > div.an > iframe{
 	overflow: hidden;
 }
 
+article > div.an > a > img{
+	width: 100%;
+	height: 27%;
+}
+
 article > div.pt{
 	width: 75%;
 	height: auto;
