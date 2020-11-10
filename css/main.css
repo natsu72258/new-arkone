@@ -23,7 +23,7 @@ header{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	background-color: #373c3f;
+	background-color: #630118;
 }
 
 header > nav{
@@ -32,11 +32,17 @@ header > nav{
 	margin: 0 auto;
 }
 
-header > nav > h1{
+header > nav > h1 > a{
 	line-height: 97px;
 	font-size: 18px;
 	color: #fff;
 	float: left;
+	font-weight: bold;
+}
+
+header > nav > h1 > a:hover{
+	color: #FFD700;
+	text-decoration: none;
 }
 
 header > nav > div{
@@ -52,52 +58,75 @@ header > nav > div > a{
 	padding: 0 10px;
 	color: #fff;
 }
+
+header > nav > div > a:hover{
+	color: #FFD700;
+	text-decoration: none;
+}
 /*------------------------------------------------------*/
 article{
-	width: 100%;
-	height: auto;
-	overflow: hidden;
-	background-color: #ccc;
-	display: flex;
-	justify-content: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex
 }
 
-article > div.an{
-	width: 25%;
-	height: auto;
-	overflow: hidden;
-	float: left;
-	
+article > div.pt > div.an{
+  width: 25%;
+  height: auto;
+  position: absolute;
+  top: 97px;
+  left: 0px;
+  z-index: 2;
 }
 
-article > div.an > iframe{
-	width: 100%;
-	height: 320px;
-	overflow: hidden;
+article > div.pt > div.an > div.ot{
+  width: 100%;
+  height: 933px;
+  position: absolute;
+  z-index: 2;
+  background-color: #ccc;
+  opacity: 0.4;
 }
 
-article > div.an > a > img{
-	width: 100%;
-	height: 27%;
+article > div.pt > div.an > div.many{
+  width: 80%;
+  height: 933px;
+  position: absolute;
+  margin: 40px;
+  z-index: 3;
+  overflow: hidden;
 }
 
-article > div.pt{
-	width: 75%;
-	height: auto;
-	float: right;
+article > div.pt > div.an > div.many > h1{
+  font-size: 50px;
+  font-weight: bold;
+  color: #FF4500;
 }
-article > div.pt > img{
+
+article > div.pt > div.an > div.many > p{
+  font-size: 50px;
+  font-weight: bold;
+}
+
+article > div.pt > div.an > div.many > iframe{
 	width: 100%;
-	height: auto;
-	overflow: hidden;
+	height: 20%;
 }
-/*------------------------------------------------------*/
+
+article > div.pt > div.an > div.many > a >img{
+  width: 100%;
+  height: auto;
+}
+
 aside{
 	position: relative;
 	width: 100%;
 	height: 495px;
 	overflow: hidden;
-	background-image: url('../images/banner.png');
+	background-image: url('../images/whitetrain.png');
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 
@@ -107,19 +136,23 @@ aside > div{
 	height: 495px;
 	overflow: hidden;
 	margin: 0 auto;
+	background-color: rgb(0, 0, 0, 0.05);
+	background-size: cover;
 }
 
 aside > div > h4{
-	font-size: 40px;
-	color: #088ca5;
+	font-size: 60px;
+	color: #191970;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 20px;
+	font-weight: bold;
 }
 
 aside > div > p{
 	font-size: 30px;
+	color: rgb(0, 0, 0);
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 40px;
 	line-height: 60px;
 }
 /*------------------------------------------------------*/
@@ -127,7 +160,10 @@ main{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	background-color: #f7f3f3;
+	background-image: url('../images/whitetrain.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 main > div{
 	width: 1024px;
@@ -154,22 +190,32 @@ main > div > div.rightbox{
 	padding-top: 10px;
 }
 
+main > div > div.rightbox > img{
+	width: 120%;
+	height: 130%;
+}
+
 main > div > div > p{
-	font-size: 20px;
+	font-size: 21px;
 	color: #515151;
 	padding-top: 46px;
+	font-weight: bold;
 }
 
 div.leftbox > h2{
 	font-size: 45px;
-	color: #088ca5;
+	color: #191970;
+	font-weight: bold;
 }
 /*------------------------------------------------------*/
 section#s1{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	background-color: #fff;
+	background-image: url('../images/whitetrain.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 section#s1 > div{
@@ -191,21 +237,28 @@ section#s1 > div > div.lb{
 	padding-top: 20px;
 }
 
+section#s1 > div > div.lb > img{
+	width: 100%;
+	height: 120%;
+}
+
 section#s1 > div > div.rb{
 	float: right;	
 	padding-top: 55px;
-	padding-left: 100px;
+	padding-left: 150px;
 }
 
 section#s1 > div > div > ol{
-	font-size: 20px;
+	font-size: 22px;
 	color: #515151;
 	padding-top: 46px;
+	font-weight: bold;
 }
 
 div.rb > h5{
 	font-size: 45px;
-	color: #088ca5;
+	color: #191970;
+	font-weight: bold;
 }
 /*------------------------------------------------------*/
 .toTop-arrow {
@@ -314,7 +367,7 @@ footer{
 	width: 100%;
 	height: auto;
 	overflow: hidden;
-	background-color: #373c3f;
+	background-color: #630118;
 }
 
 footer > div{
@@ -322,7 +375,7 @@ footer > div{
 	height: auto;
 	overflow: hidden;
 	margin: 0 auto;
-	padding: 20px 84px 20px 84px;
+	padding: 10px 0px 0px 80px;
 }
 
 footer > div > div{
@@ -333,35 +386,51 @@ footer > div > div{
 
 footer > div > div.wordbox{
 	float: left;
-	padding-top: 20px;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 20px;
 }
 
 footer > div > div.linkbox{
 	float: right;	
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-left: 100px;
 }
 
 div.wordbox > h6{
 	font-size: 30px;
 	color: #fff;
+	font-weight: bold;
 }
 
 div.wordbox > a{
 	font-size: 20px;
 	padding-top: 20px;
-	line-height: 70px;
+	line-height: 20px;
 	color: #fff;
+	font-family: "Microsoft JhengHei","sans-serif";
+	text-decoration: none;
+}
+
+div.wordbox > a:hover{
+	text-decoration: none;
+	color: #FFD700;
 }
 
 div.linkbox > h3{
 	font-size: 30px;
 	color: #fff;
 	padding-bottom: 10px;
+	font-weight: bold;
 }
 
 #FB{
      color: #fff;
+}
+
+#FB:hover{
+	color: #4169E1;
 }
 
 /*------------------------------------------------------*/
@@ -370,7 +439,7 @@ div.linkbox > h3{
 		width: 100%;
 	}
 
-	header > nav > h1{
+	header > nav > h1 > a{
 		padding-left: 30px;
 	}
 
@@ -379,36 +448,52 @@ div.linkbox > h3{
 		padding: 0 10px;
 		padding-right: 20px;
 	}
+
+	article > div.an > h2.link {
+	  width: 101%;
+	  margin: 0 auto;
+	  height: 26.5%;
+	}
+
+	article > div.an > h3.link2 {
+	  width: 101%;
+	  margin: 0 auto;
+	  height: 25.5%;
+	}
 	
 	article > div.an > iframe{
 		width: 100%;
-		height: 190px;
+		height: 170px;
 		overflow: hidden;
 	}
 	article > div.an > a > img{
 	height: 23%;
 	}
+
+	footer > div{
+	padding: 10px 50px 20px 170px;
+	}
 }
 /*------------------------------------------------------*/
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 	#menubtn{
 		display: block;
 		width: 82px;
 		height: 74px;
-		background-image: url('../images/menu.jpg');
+		background-image: url('../images/menured.png');
 		float: right;
 	}
 	header > nav{
-		transition: height: 0.3s;
+		transition: height 0.3s;
 		height: 74px;
 		overflow: hidden;
 	}
 
 	header > nav.open{
-		height: 444px;
+		height: 310px;
 	}
 
-	header > nav > h1{
+	header > nav > h1 > a{
 		line-height: 74px;
 	}
 
@@ -427,7 +512,7 @@ div.linkbox > h3{
 		overflow: hidden;
 		padding-left: 30px;
 	}
-/*------------------------------------------------------*/
+
 	article{
 		width: 100%;
 		height: auto;
@@ -440,11 +525,394 @@ div.linkbox > h3{
 
 	article > div.an{
 		width: 100%;
-		height: auto;
+		height: 750px;
 		overflow: hidden;
 		float: left;
 		display: flex;
 		flex-direction: column;
+	}
+
+	article > div.an > h2.link {
+	  width: 100%;
+	  margin: 0px 0px 0px 5px;
+	  height: 100%;
+	  padding-top: 80px;
+	}
+
+	article > div.an > h2.link > a {
+	  display: block;
+	  height: 100%;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-indent: 101%;
+	}
+
+	article > div.an > h3.link2 {
+	  width: 100%;
+	  margin: 0px 10px 0px 5px;
+	  height: 105%;
+	  padding-top: 70px;
+	}
+
+	article > div.an > iframe{
+		width: 100%;
+		height: 120%;
+		overflow: hidden;
+	}
+
+	article > div.pt{
+		width: 100%;
+		height: auto;
+		float: right;
+	}
+	article > div.pt > img{
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+	}
+
+	aside{
+		height: 335px;
+	}
+
+	aside > div{
+		height: 335px;
+	}
+
+	aside > div > h4{
+		font-size: 35px;
+		padding-top: 20px;
+	}
+
+	aside > div > p{
+		font-size: 25px;
+		padding-top: 20px;
+		line-height: 48px;
+	}
+
+	main > div{
+		padding: 12%;
+	}
+	main > div > div{
+		width: 100%;
+	}
+
+	main > div > div.leftbox{
+		float: left;
+		padding-top: 55px;
+		padding-left: 38px;
+	}
+
+	main > div > div.rightbox{
+		float: right;
+		margin-right: 23px;
+		padding-top: 20px;
+	}
+
+	main > div > div.rightbox > img{
+	width: 100%;
+	height: 100%;
+	}
+
+	main > div > div > p{
+		font-size: 23px;
+		color: #515151;
+		padding-top: 46px;
+		line-height: 38px;
+	}
+
+	main > div > div > img{
+		width: 90%;
+		height: auto;
+	}
+
+	div.leftbox > h2{
+		font-size: 50px;
+		color: #088ca5;
+	}
+
+	section#s1 > div{
+		padding: 12%;
+	}
+
+	section#s1 > div > div{
+		width: 100%;
+	}
+
+	section#s1 > div > div.lb{
+		float: left;
+		padding-top: 20px;
+		padding-left: 0px;
+	}
+
+	section#s1 > div > div.lb > img{
+		width: 55%;
+		height: 70%;
+	}
+
+	section#s1 > div > div.rb{
+		float: right;	
+		padding-top: 55px;
+		margin-right: 110px;
+	}
+
+	section#s1 > div > div > ol{
+		font-size: 27px;
+		color: #515151;
+		padding-top: 46px;
+		line-height: 48px;
+		padding-left: 40px;
+	}
+
+	div.rb > h5{
+		font-size: 50px;
+		color: #088ca5;
+		padding-left: 40px;
+	}
+
+	footer > div > div.linkbox{	
+	padding-left: 20px;
+	}
+
+	footer > div{
+	padding: 10px 0px 10px 100px;
+	}
+}
+/*------------------------------------------------------*/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+
+    #menubtn{
+        display: block;
+        width: 60px;
+        height: 53px;
+        background-size: 100% 100%;
+        float: right;
+    }
+
+    header > nav{
+        transition: height 0.3s;
+        height: 53px;
+        overflow: hidden;
+    }
+
+    header > nav.open{
+        height: 220px;
+    }
+
+    header > nav > h1 > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    header > nav > div > a{
+        line-height: 53px;
+        padding-left: 20px;
+    }
+
+    article > div.an{
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		float: left;
+		display: flex;
+		flex-direction: column;
+	}
+
+    article > div.an > h2.link {
+	  width: 100%;
+	  margin: 0px 0px 0px 5px;
+	  height: 28%;
+	  padding-top: 200px;
+	}
+
+	article > div.an > h2.link > a {
+	  display: block;
+	  height: 100%;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-indent: 101%;
+	}
+
+	article > div.an > h3.link2 {
+	  width: 100%;
+	  margin: 0px 10px 0px 5px;
+	  height: 28%;
+	  padding-top: 190px;
+	}
+
+	article > div.an > iframe{
+		height: 250px;
+	}
+
+	aside{
+		height: 300px;
+	}
+
+	aside > div{
+		height: 300px;
+	}
+
+	aside > div > h4{
+		font-size: 35px;
+		padding-top: 30px;
+	}
+
+	aside > div > p{
+		font-size: 20px;
+		padding-top: 10px;
+		line-height: 38px;
+	}
+
+	main > div{
+		padding: 11%;
+	}
+	main > div > div{
+		width: 100%;
+	}
+
+	main > div > div.leftbox{
+		float: left;
+		padding-top: 45px;
+		padding-left: 20px;
+	}
+
+	main > div > div.rightbox{
+		float: left;
+		padding-top: 20px;
+		padding-right: 20px;
+	}
+
+	main > div > div.rightbox > img{
+		width: 100%;
+		height: 100%;
+	}
+
+
+	main > div > div > p{
+		font-size: 1.2em;
+		color: #515151;
+		padding-top: 46px;
+		line-height: 38px;
+	}
+
+	main > div > div > img{
+		width: 120%;
+		height: auto;
+	}
+
+	div.leftbox > h2{
+		font-size: 40px;
+		color: #088ca5;
+	}
+
+	section#s1 > div{
+		padding: 11%;
+	}
+
+	section#s1 > div > div{
+		width: 100%;
+	}
+
+	section#s1 > div > div.lb{
+		float: left;
+		padding-top: 20px;
+		padding-right: 30px;
+		margin-right: 20px;
+	}
+
+	section#s1 > div > div.rb{
+		float: right;	
+		padding-top: 55px;
+		margin-right: 140px;
+	}
+
+	section#s1 > div > div.lb > img{
+		width: 40%;
+		height: 70%;
+	}
+
+	section#s1 > div > div > ol{
+		font-size: 20px;
+		color: #515151;
+		padding-top: 46px;
+		line-height: 38px;
+		padding-left: 50px;
+	}
+
+
+	div.rb > h5{
+		font-size: 45px;
+		color: #088ca5;
+		padding-left: 45px;
+	}
+
+    footer > div > div.linkbox{ 
+    padding-left: 10px;
+    }
+
+    footer > div{
+    padding: 10px 0px 10px 60px;
+    }
+}
+/*------------------------------------------------------*/
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+	#menubtn{
+		display: block;
+		width: 41px;
+		height: 37px;
+		background-size: 100% 100%;
+		float: right;
+	}
+
+	header > nav{
+		transition: height 0.3s;
+		height: 37px;
+		overflow: hidden;
+	}
+
+	header > nav.open{
+		height: 155px;
+	}
+
+	header > nav > h1 > a{
+		line-height: 37px;
+		padding-left: 20px;
+	}
+
+	header > nav > div > a{
+		line-height: 37px;
+		padding-left: 20px;
+	}
+
+	article > div.an{
+		width: 100%;
+		height: 450px;
+		overflow: hidden;
+		float: left;
+		display: flex;
+		flex-direction: column;
+	}
+
+    article > div.an > h2.link {
+	  width: 100%;
+	  margin: 0px 0px 0px 5px;
+	  height: 13%;
+	  padding-top: 130px;
+	}
+
+	article > div.an > h2.link > a {
+	  display: block;
+	  height: 100%;
+	  overflow: hidden;
+	  white-space: nowrap;
+	  text-indent: 100%;
+	}
+
+	article > div.an > h3.link2 {
+	  width: 100%;
+	  margin: 0px 10px 0px 5px;
+	  height: 13%;
+	  padding-top: 130px;
 	}
 
 	article > div.an > iframe{
@@ -463,121 +931,7 @@ div.linkbox > h3{
 		height: auto;
 		overflow: hidden;
 	}
-/*------------------------------------------------------*/
-	aside{
-		height: 335px;
-	}
 
-	aside > div{
-		height: 335px;
-	}
-
-	aside > div > h4{
-		font-size: 30px;
-		padding-top: 70px;
-	}
-
-	aside > div > p{
-		font-size: 25px;
-		padding-top: 50px;
-		line-height: 38px;
-	}
-/*------------------------------------------------------*/
-	main > div{
-		padding: 12%;
-	}
-	main > div > div{
-		width: 100%;
-	}
-
-	main > div > div.leftbox{
-		float: left;
-		padding-top: 55px;
-		padding-left: 40px;
-	}
-
-	main > div > div.rightbox{
-		float: right;
-		padding-left: 18px;
-		padding-top: 0px;
-	}
-
-	main > div > div > p{
-		font-size: 20px;
-		color: #515151;
-		padding-top: 46px;
-		line-height: 38px;
-	}
-
-	div.leftbox > h2{
-		font-size: 45px;
-		color: #088ca5;
-	}
-/*------------------------------------------------------*/
-	section#s1 > div{
-		padding: 12%;
-	}
-
-	section#s1 > div > div{
-		width: 100%;
-	}
-
-	section#s1 > div > div.lb{
-		float: left;
-		padding-top: 20px;
-		padding-left: 10px;
-	}
-
-	section#s1 > div > div.rb{
-		float: right;	
-		padding-top: 55px;
-		padding-left: 40px;
-	}
-
-	section#s1 > div > div > ol{
-		font-size: 20px;
-		color: #515151;
-		padding-top: 46px;
-		line-height: 38px;
-		padding-left: 60px;
-	}
-
-	div.rb > h5{
-		font-size: 45px;
-		color: #088ca5;
-		padding-left: 55px;
-	}
-}
-/*------------------------------------------------------*/
-@media screen and (max-width: 320px) {
-	#menubtn{
-		display: block;
-		width: 41px;
-		height: 37px;
-		background-size: 100% 100%;
-		float: right;
-	}
-
-	header > nav{
-		transition: height: 0.6s;
-		height: 37px;
-		overflow: hidden;
-	}
-
-	header > nav.open{
-		height: 222px;
-	}
-
-	header > nav > h1{
-		line-height: 37px;
-		padding-left: 20px;
-	}
-
-	header > nav > div > a{
-		line-height: 37px;
-		padding-left: 20px;
-	}
-/*------------------------------------------------------*/
 	aside{
 		height: 300px;
 	}
@@ -587,16 +941,16 @@ div.linkbox > h3{
 	}
 
 	aside > div > h4{
-		font-size: 30px;
-		padding-top: 50px;
+		font-size: 24px;
+		padding-top: 40px;
 	}
 
 	aside > div > p{
-		font-size: 14px;
-		padding-top: 25px;
-		line-height: 38px;
+		font-size: 15px;
+		padding-top: 15px;
+		line-height: 35px;
 	}
-/*------------------------------------------------------*/
+
 	main > div > div.leftbox{
 		float: left;
 		padding-top: 55px;
@@ -610,18 +964,19 @@ div.linkbox > h3{
 	}
 
 	main > div > div.rightbox > img{
-		width: 100%;
+		width: 105%;
+		height: 100%;
 	}
 
 	main > div > div > p{
-		font-size: 19px;
+		font-size: 1.3em;
 		color: #515151;
 		padding-top: 30px;
-		line-height: 38px;
+		line-height: 43px;
 	}
 
 	div.leftbox > h2{
-		font-size: 45px;
+		font-size: 50px;
 		color: #088ca5;
 	}
 /*------------------------------------------------------*/
@@ -640,13 +995,14 @@ div.linkbox > h3{
 	}
 
 	section#s1 > div > div.lb > img{
-		width: 23%;
+		width: 28%;
+		height: 100%;
 	}
 
 	section#s1 > div > div.rb{
 		float: left;	
 		padding-top: 55px;
-		padding-left: 0px;
+		padding-left: 10px;
 	}
 
 	section#s1 > div > div > ol{
@@ -679,7 +1035,6 @@ div.linkbox > h3{
 
 	footer > div > div.linkbox{
 		float: left;	
-		padding-top: 20px;
 		padding-left: 20px;
 	}
 
