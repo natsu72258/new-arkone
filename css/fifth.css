@@ -69,6 +69,7 @@ aside{
     background-image: url('../images/圖.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%25%;
 }
 
 aside > h3{
