@@ -359,11 +359,17 @@ div.wordbox > h6{
     color: #fff;
 }
 
+footer > div > div.linkbox > div{
+  display: flex;
+}
+
 div.wordbox > a{
-    font-size: 20px;
-    padding-top: 20px;
-    line-height: 20px;
-    color: #fff;
+  font-size: 20px;
+  padding-top: 20px;
+  line-height: 20px;
+  color: white;
+  font-family: "Microsoft JhengHei","sans-serif";
+  text-decoration: none;
 }
 
 div.wordbox > a:hover{
@@ -372,17 +378,32 @@ div.wordbox > a:hover{
 }
 
 div.linkbox > h3{
-    font-size: 30px;
-    color: #fff;
-    padding-bottom: 10px;
+  font-size: 30px;
+  color: white;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
+
+a.shareBtn{
+    display: block;
+    text-indent: -9999px;
+    width: 42px;
+    height: 42px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left:20px; 
+    margin-top: 2px;
+}
+a.pc{
+    background-image: url("../images/linebutton_gress.png");
+}
+a.mobile{
+    background-image: url("../images/linebutton_blue.png");
+}
+
 
 #FB{
-     color: #fff;
-}
-
-#FB:hover{
-  color: #4169E1;
+     color: rgb(30, 144, 255);
 }
 /*------------------------------------------------------*/
 @media screen and (max-width: 1024px) {

@@ -42,6 +42,7 @@ header > nav > h1 > a{
 
 header > nav > h1 > a:hover{
   text-decoration: none;
+  color: #FFD700;
 }
 
 header > nav > div{
@@ -60,6 +61,7 @@ header > nav > div > a{
 
 header > nav > div > a:hover{
   text-decoration: none;
+  color: #FFD700;
 }
 /*------------------------------------------------------*/
 article{
@@ -466,6 +468,10 @@ div.wordbox > h6{
   font-weight: bold;
 }
 
+footer > div > div.linkbox > div{
+  display: flex;
+}
+
 div.wordbox > a{
   font-size: 20px;
   padding-top: 20px;
@@ -487,12 +493,26 @@ div.linkbox > h3{
   font-weight: bold;
 }
 
-#FB{
-     color: white;
+a.shareBtn{
+    display: block;
+    text-indent: -9999px;
+    width: 42px;
+    height: 42px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-left:20px; 
+    margin-top: 2px;
+}
+a.pc{
+    background-image: url("../images/linebutton_gress.png");
+}
+a.mobile{
+    background-image: url("../images/linebutton_gress.png");
 }
 
-#FB:hover{
-  color: #4169E1;
+
+#FB{
+     color: rgb(30, 144, 255);
 }
 
 /*------------------------------------------------------*/
@@ -549,7 +569,7 @@ div.linkbox > h3{
   }
 
   div.phone > div.vd > div > iframe{
-    width: 588px;
+    width: 100%;
     height: 310px;
     
   }
@@ -567,7 +587,7 @@ div.linkbox > h3{
     overflow: hidden;
     position: relative;
     padding-top: 15%;
-    left: 25%;
+    left: 23%;
     opacity: 1;
     transition: all 3s;
   }
@@ -578,6 +598,7 @@ div.linkbox > h3{
     color: #fff;
     text-align: center;
     padding-top: 5%;
+
   }
 
   div.phone > div.lk > div > a > img:hover{
@@ -660,6 +681,15 @@ div.linkbox > h3{
     left: 23%;
     opacity: 1;
     transition: all 3s;
+  }
+
+   div.phone > div.lk > div > h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding-top: 5%;
+    margin-left: 10%;
   }
 
   main > div > div.leftbox{
@@ -803,6 +833,10 @@ div.linkbox > h3{
     transition: all 3s;
   }
 
+  div.phone > div.lk > div > h2{
+    margin-left: 0%;
+  }
+
   main > div{
     padding: 12%;
   }
@@ -864,7 +898,7 @@ div.linkbox > h3{
   section#s1 > div > div.rb{
     float: right; 
     padding-top: 10%;
-    margin-right: 0%;
+    padding-left: 11%;
   }
 
   section#s1 > div > div > ol{
@@ -1062,7 +1096,8 @@ div.linkbox > h3{
   section#s1 > div > div.rb{
     float: right; 
     padding-top: 55px;
-    margin-right: 2%;
+    margin-right: 0%;
+    padding-left: 5%;
   }
 
   section#s1 > div > div > ol{
@@ -1222,13 +1257,15 @@ div.linkbox > h3{
     float: left;
     padding-top: 20px;
     padding-right: 0%;
-    margin-right: 10%;
+    margin-right: 5%;
+    padding-left: 3%;
   }
 
   section#s1 > div > div.rb{
     float: right; 
     padding-top: 55px;
-    margin-right: 5%;
+    margin-right: 2%;
+    
   }
 
   section#s1 > div > div.lb > img{
@@ -1401,7 +1438,7 @@ div.linkbox > h3{
   section#s1 > div > div.rb{
     float: right; 
     padding-top: 55px;
-    margin-right: 7%;
+    margin-right: 4%;
   }
 
   section#s1 > div > div.lb > img{
@@ -1563,7 +1600,7 @@ div.linkbox > h3{
   section#s1 > div > div.rb{
     float: right; 
     padding-top: 8%;
-    margin-right: 7%;
+    margin-right: 5%;
   }
 
   section#s1 > div > div.lb > img{
@@ -1743,7 +1780,7 @@ div.linkbox > h3{
   section#s1 > div > div.rb{
     float: right; 
     padding-top: 5%;
-    margin-right: 6%;
+    margin-right: 3%;
   }
 
   section#s1 > div > div.lb > img{
@@ -1935,7 +1972,7 @@ div.linkbox > h3{
   section#s1 > div > div.rb{
     float: right; 
     padding-top: 55px;
-    margin-right: 7%;
+    margin-right: 4%;
   }
 
   section#s1 > div > div.lb > img{
